@@ -192,7 +192,21 @@ table {
       margin: auto;
   }
 
-  .left-align {
+.flex-container {
+    display:flex;
+    margin-top: 20px;
+}
+
+.flex-child {
+    flex:1;
+    border: 0.5px solid black;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+  /* .left-align {
     float: left;
     width:500px;
     height: 400px;
@@ -208,4 +222,4 @@ table {
     margin-top:20px;
     margin-right: 100px;;
     background-color: var(--light-gray);
-  }
+  } */
