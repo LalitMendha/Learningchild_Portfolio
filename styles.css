@@ -195,15 +195,21 @@ table {
 .flex-container {
     display:flex;
     margin-top: 20px;
+    flex-direction: row;
 }
 
 .flex-child {
-    flex:1;
+    flex: 1;
     border: 0.5px solid black;
 }
 
 .flex-child:first-child {
     margin-right: 20px;
+}
+
+.gitalternative-container {
+    padding: 1rem;
+    margin: auto;
 }
 
   /* .left-align {
