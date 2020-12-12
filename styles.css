@@ -212,6 +212,32 @@ table {
     margin: auto;
 }
 
+.qna-container {
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+    background-color: var(--light-gray);
+}
+
+.questions {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.answer {
+    color: black;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.notes {
+    background-color: var(--secondary-color);
+    color: black;
+    font-weight: normal;
+    text-align: left;
+}
+
   /* .left-align {
     float: left;
     width:500px;

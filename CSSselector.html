@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navigation">
+        <h1>CSS Selector</h1>
+        <a href="blog.html">
+            <img style="padding-left: 1rem;" src="/image/backarrow.svg"/>
+        </a>
+        <br>
+    </div> 
+    <div class="qna-container">
+        <ol>
+            <li>
+                <h1 class="questions">What is CSS Selector?</h1>
+                <p class="answer"><strong>CSS selectors</strong> define the elements to which a set of CSS rules apply.</p>
+                <div class="notes">
+                    <p style="text-decoration: underline;"><strong>Notes:</string></p>
+                    <p>There are no selectors or combinators to select parent items, siblings of parents, or children of parent siblings.</p>
+                </div>
+            </li>
+            <li class="nobgColor">
+                <h1 class="questions">What are types of CSS selectors?</h1>
+                <p class="answer">There are 5 types of selectors:</p>
+                <ul>
+                    <li style="text-align:left">Universal Selector:
+                    <div>
+                        <p class="answer">Selects all elements.</p>
+                        <p class="answer"><strong>Syntax:</strong> * </p>
+                        <p class="answer">Example: * { color: "blue"}</p>
+                    </div>
+                    </li>
+                    <li style="text-align:left">Type Selector:
+                        <div>
+                            <p class="answer">Selects all elements that have the given node name.</p>
+                            <p class="answer"><strong>Syntax:</strong> elementname(h1,h2,..) </p>
+                            <p class="answer">Example: div { color: "blue"}</p>
+                        </div>
+                    </li>
+                    <li style="text-align:left">Class Selector:
+                        <div>
+                            <p class="answer">Selects all elements that have the given class attribute.</p>
+                            <p class="answer"><strong>Syntax:</strong> .classname </p>
+                            <p class="answer">Example: .container { color: "blue"}</p>
+                            <p class="answer"> define a div element with a class property as "container".</p>
+                        </div>
+                    </li>
+                    <li style="text-align:left">ID Selector:
+                        <div>
+                            <p class="answer">Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.</p>
+                            <p class="answer"><strong>Syntax:</strong> #idInput </p>
+                            <p class="answer">Example: #idInput { color: "blue"}</p>
+                            <p class="answer">define a div element with a id property as "idInput"</p>
+                        </div>
+                    </li>
+                    <li style="text-align:left">Attribute Selector:
+                        <div>
+                            <p class="answer">Selects all elements that have the given attribute.</p>
+                            <p class="answer"><strong>Syntax:</strong> [attr], [attr = value] </p>
+                            <p class="answer">Example: "[autoplay]" will match all elements that have autopay attribute set </p>
+                        </div>
+                    </li>
+                </ul> 
+            </li>
+            <li>
+                <h1 class="questions">What are different Grouping selectors?</h1>
+                <p class="answer">Selector list: The , is a grouping method, it selects all the matching nodes.</p>
+                <p class="answer"><strong>Syntax: </strong> A, B</p>
+                <p class="answer"><strong>Example: </strong> Div, span will match both span and div elements.</span></p>         
+            </li>
+            <li class="nobgColor">
+                <h1 class="questions">What are different Combinators?</h1>
+                <p class="answer"> There are 5 Combinators:</p>
+                <ul>
+                    <li style="text-align: left;"> Descendant combinator:
+                        <div>
+                            <p class="answer"> The space   combinator select the nodes that are descendant of first element.</p>
+                            <p class="answer"><strong>Syntax: </strong>A B</p>
+                            <p class="answer"><strong>Example :</strong> "div span" will match all span elements that are inside a div element. </p>
+                        </div>
+                    </li>
+                    <li style="text-align: left;"> Child combinator:
+                        <div>
+                            <p class="answer"> The > combinator selects no des that are direct children of the first element.</p>
+                            <p class="answer"><strong>Syntax: </strong>A > B</p>
+                            <p class="answer"><strong>Example :</strong> "ul > li" will match all li elements that are nested directly inside a ul </p>
+                        </div>
+                    </li>
+                    <li style="text-align: left;"> General sibling combinator:
+                        <div>
+                            <p class="answer"> The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent.</p>
+                            <p class="answer"><strong>Syntax: </strong>A ~ B</p>
+                            <p class="answer"><strong>Example :</strong> "p ~ span" will match all "span" elements that follow a "p", immediately or not.</p>
+                        </div>
+                    </li>
+                    <li style="text-align: left;"> Adjacent sibling combinator:
+                        <div>
+                            <p class="answer"> The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both share the same parent.</p>
+                            <p class="answer"><strong>Syntax: </strong>A + B</p>
+                            <p class="answer"><strong>Example :</strong> "h2 + p" will match all "p" elements that directly follow an "h2".</p>
+                        </div>
+                    </li>
+                    <li style="text-align: left;"> Column combinator:
+                        <div>
+                            <p class="answer"> The || combinator selects nodes which belong to a column.</p>
+                            <p class="answer"><strong>Syntax: </strong>A || B</p>
+                            <p class="answer"><strong>Example :</strong> "col || td" will match all "td" elements that belong to the scope of the "col".</p>
+                        </div>
+                    </li>
+                </ul>
+                <li>
+                    <h1 class="questions">What are Pseudo classes and Pseudo elements?</h1>
+                    <ul>
+                        <li style="text-align: left;"> Pseudo classes:
+                            <p class="answer"> The : pseudo allow the selection of elements based on state information that is not contained in document tree.</p>
+                            <p><strong>Example:</strong> "a:visited" will match all "a" element that have been visited by the user.</p>
+                        </li>
+                        <li style="text-align: left;"> Pseudo elements:
+                            <p class="answer"> The :: pseudo represent entities that are not included in HTML.</p>
+                            <p><strong>Example:</strong> "p::first-line" will match the first line of all "p" elements</p>
+                        </li>
+                    </ul>
+                </li>
+            </li>
+        </ol>
+    </div>
+    <div class="footer">
+        <h3> To learn more about CSS Selector please visit the link:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">CSS Selector</a> 
+        </h3>
+        <h1>Thank You !!</h1>
+    </div>
+</body>
+</html>

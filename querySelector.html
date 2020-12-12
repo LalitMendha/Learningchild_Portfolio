@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navigation">
+        <h1> Document.querySelector()</h1>
+        <a href="blog.html">
+            <img style="padding-left: 1rem;" src="/image/backarrow.svg" />
+        </a>
+        <br>
+    </div>
+    <div class="qna-container">
+        <ul>
+            <li>
+                <h1 class="questions">Explain Document.querySelector()</h1>
+                <p class="answer">The Document method querySelector() returns the first Element within the document that
+                    matches the specified selector, or group of selectors. If no matches are found, null is returned.
+                </p>
+                <div class="notes">
+                    <p style="text-decoration: underline;"><strong>Notes:</string>
+                    </p>
+                    <p>The matching is done using depth-first pre-order traversal of the document's nodes starting with
+                        the first element in the document's markup and iterating through sequential nodes by order of
+                        the number of child nodes.</p>
+                </div>
+            </li>
+            <li class="nobgColor">
+                <h1 class="questions">Syntax:</h1>
+                <p class="answer"> element = document.querySelector(selectors);</p>
+            </li>
+            <li>
+                <h1 class="questions">Parameters:</h1>
+                <p class="answer"><strong>selectors:</strong>
+                    A DOMString containing one or more selectors to match. This string must be a valid CSS selector
+                    string; if it isn't, a SYNTAX_ERR exception is thrown.
+                </p>
+            </li>
+            <li class="nobgColor">
+                <h1 class="questions">Return Value:</h1>
+                <p class="answer">An HTML Element object representing the first element in the document that matches the
+                    specified set of CSS selectors, or null is returned if no matches found.</p>
+                <p class="answer">
+                    If you need a list of all elements matching the specified selectors, you should use
+                    <span
+                        style="color: var(--primary-color); font-weight:bold; text-decoration: underline;">querySelectorAll()</span>
+                    instead.
+                </p>
+            </li>
+            <li>
+                <h1 class="questions">Exception</h1>
+                <p class="answer"><strong>SYNTAX_ERR:</strong>The syntax of the specified selectors is invalid.</p>
+            </li>
+            <li>
+                <div class="notes">
+                    <p style="text-decoration: underline;"><strong>Notes:</string>
+                    </p>
+                    <p>CSS pseudo-elements will never return any elements, as specified in the Selectors API.</p>
+                </div>
+            </li>
+            <li class="nobgColor">
+                <h1 class="questions">Escaping Special Character</h1>
+                <p class="answer">To match against an ID or selectors that do not follow standard CSS syntax (by using a
+                    colon or space inappropriately, for example), you must escape the character with a backslash ("\").
+                    As the backslash is also an escape character in JavaScript, if you are entering a literal string,
+                    you must escape it twice (once for the JavaScript string, and another time for querySelector()):</p>
+                <p class="answer"><strong>Example:</strong> document.querySelector('#foo\\:bar'); </p>
+                <p class="answer">The id of div element is foo:bar</p>    
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <h3> To learn more about Document.querySelector() please visit the link:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">Document.querySelector()</a> 
+        </h3>
+        <h1>Thank You !!</h1>
+    </div>
+</body>
+
+</html>
