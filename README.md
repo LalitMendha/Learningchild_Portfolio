@@ -1,10 +1,12 @@
-#Learning Child
+# Learning Child
 
-This Application is a portfolio of a Learning child. In this Application all the things learned by the child and the projects created are displayed.
+## Application link: https://anenthusiastlearner.netlify.app/
 
-This Application contains 3 sections
-    1. Home page - Where the details on user is displayed.
-    2. Project section - The second tab is the project section where the projects created by child are displayed with their Link.
-    3. Blog page
+### This Application is a portfolio of an Enthusiat Learner. 
 
-#This Application is built using HTML and CSS component.  
+### This Application contains 3 sections
+* Home page - Where the details on user is displayed.
+* Project section - The second tab is the project section where the projects created are displayed with their Link.
+* Blog page - where i show my Learning journey and the topics i explored.
+
+# This Application is built using HTML and CSS component.  
