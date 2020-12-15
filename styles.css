@@ -113,6 +113,7 @@ a:active{
     border-radius: 0.5rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    font-size: 15px;;
     margin: auto;
     padding: 0.5rem;
     font-weight: lighter;
